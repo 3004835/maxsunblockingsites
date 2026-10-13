@@ -1,0 +1,1 @@
+Copy your logo.png and header.png into this folder before uploading. They should be named exactly logo.png and header.png.

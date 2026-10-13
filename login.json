@@ -1,0 +1,6 @@
+{
+  "allowedEmails": [
+    "student@example.edu"
+  ],
+  "_note": "Demo only. This file is public on static hosting. Do not add real student emails."
+}

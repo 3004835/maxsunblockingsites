@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0e">
+  <title>Max's Unblocking Sites 2026/2027</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Home">
+      <img src="assets/logo.png" alt="" class="brand-logo">
+      <span><strong>Max's Unblocking Sites</strong><small>2026 / 2027</small></span>
+    </a>
+    <span class="status"><i></i> Student portal</span>
+  </header>
+
+  <main>
+    <section id="login-view" class="login-layout">
+      <div class="hero-copy">
+        <img class="hero-banner" src="assets/header.png" alt="" aria-hidden="true">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> STUDENT ACCESS PORTAL</span>
+        <h1>Your web resources.<br><span>One simple place.</span></h1>
+        <p class="intro">A streamlined directory for the 2026–2027 school year. Sign in with your student email to view the resource list.</p>
+        <div class="trust-row"><span>✦ Clean interface</span><span>•</span><span>Organized resources</span></div>
+      </div>
+      <div class="login-card">
+        <div class="card-icon"><img src="assets/logo.png" alt=""></div>
+        <h2>Welcome back</h2>
+        <p class="muted">Enter your student email to continue.</p>
+        <form id="login-form">
+          <label for="student-email">Student email</label>
+          <div class="input-wrap"><span aria-hidden="true">✉</span><input id="student-email" name="email" type="email" placeholder="you@school.edu" autocomplete="email" required></div>
+          <p id="login-error" class="error" role="alert" hidden></p>
+          <button type="submit" id="login-button">Continue <span aria-hidden="true">→</span></button>
+        </form>
+        <p class="privacy-note"><span aria-hidden="true">◆</span> Access is limited to approved email addresses.</p>
+      </div>
+    </section>
+
+    <section id="directory-view" hidden>
+      <div class="directory-hero">
+        <div><span class="eyebrow"><span class="eyebrow-dot"></span> RESOURCE DIRECTORY</span><h1>You're in.</h1><p class="intro">Browse the available resource categories below.</p></div>
+        <button class="secondary-button" id="sign-out">Sign out</button>
+      </div>
+      <div class="welcome-strip"><div class="welcome-mark">✓</div><div><strong>Access granted</strong><p id="signed-in-as">Signed in</p></div></div>
+      <div class="section-heading"><div><h2>Available pages</h2><p class="muted">Choose a resource to open it in a new tab.</p></div><span id="resource-count" class="count-pill"></span></div>
+      <div id="resource-groups"></div>
+      <footer class="directory-footer">Use resources responsibly and follow your school’s acceptable-use policies.</footer>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© 2026–2027 Max's Unblocking Sites</span><span>Designed for a cleaner browsing experience</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
