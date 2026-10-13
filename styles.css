@@ -120,3 +120,115 @@ h1,h2,p{margin-top:0}h1{font:800 clamp(38px,5vw,60px)/1.08 Manrope,sans-serif;le
     transition: none;
   }
 }
+
+
+.signup-section {
+  padding: 64px 5%;
+  color: #fff;
+  background: #080808;
+}
+
+.signup-heading {
+  max-width: 700px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.signup-label {
+  color: #aaa;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.signup-heading h2 {
+  margin: 14px 0;
+  font-size: clamp(30px, 4vw, 44px);
+  letter-spacing: -1.5px;
+}
+
+.signup-heading > p {
+  color: #aaa;
+  line-height: 1.7;
+}
+
+.signup-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.signup-card {
+  min-width: 0;
+  overflow: hidden;
+  padding: 22px;
+  background: #111;
+  border: 1px solid #292929;
+  border-radius: 16px;
+}
+
+.signup-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.step-number {
+  display: grid;
+  place-items: center;
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  color: #111;
+  background: #fff;
+  border-radius: 10px;
+  font-weight: 800;
+}
+
+.signup-card-heading h3 {
+  margin: 0 0 6px;
+  font-size: 19px;
+}
+
+.signup-card-heading p {
+  margin: 0;
+  color: #999;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.tutorial-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #000;
+  border-radius: 10px;
+}
+
+.signup-form {
+  display: block;
+  width: 100%;
+  height: 520px;
+  border: 0;
+  border-radius: 8px;
+  background: #fff;
+}
+
+@media (max-width: 800px) {
+  .signup-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .signup-section {
+    padding: 44px 5%;
+  }
+
+  .signup-form {
+    height: 560px;
+  }
+}
