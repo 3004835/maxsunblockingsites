@@ -232,3 +232,159 @@ h1,h2,p{margin-top:0}h1{font:800 clamp(38px,5vw,60px)/1.08 Manrope,sans-serif;le
     height: 560px;
   }
 }
+
+
+```css
+/* LOOK FOR YOUR SCHOOL */
+
+.find-school-section {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 55px 0;
+  padding: clamp(32px, 6vw, 65px) 24px;
+  overflow: hidden;
+  color: #f8f8fa;
+  text-align: center;
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(255, 25, 45, 0.14),
+      transparent 60%
+    ),
+    linear-gradient(145deg, #151518, #09090b 75%);
+  border: 1px solid rgba(255, 45, 55, 0.28);
+  border-radius: 22px;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.22);
+  transition: border-color 250ms ease, box-shadow 250ms ease;
+}
+
+.find-school-section:hover {
+  border-color: rgba(255, 45, 55, 0.55);
+  box-shadow:
+    0 20px 55px rgba(0, 0, 0, 0.28),
+    0 0 35px rgba(255, 0, 25, 0.06);
+}
+
+.school-search-icon {
+  display: grid;
+  place-items: center;
+  width: 66px;
+  height: 66px;
+  margin-bottom: 23px;
+  color: #ff4655;
+  background: rgba(255, 30, 45, 0.09);
+  border: 1px solid rgba(255, 50, 65, 0.35);
+  border-radius: 19px;
+  box-shadow: 0 0 28px rgba(255, 0, 30, 0.08);
+}
+
+.school-search-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.school-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #ff5360;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+.school-eyebrow-dot {
+  width: 6px;
+  height: 6px;
+  background: #ff293b;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 35, 55, 0.8);
+}
+
+.find-school-section h2 {
+  margin: 18px 0 12px;
+  font-size: clamp(30px, 5vw, 48px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.find-school-section h2 span {
+  color: #ff3548;
+}
+
+.find-school-section > p {
+  max-width: 510px;
+  margin: 0 auto;
+  color: #a9a9b2;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.find-school-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  min-height: 48px;
+  margin-top: 27px;
+  padding: 0 23px;
+  color: #fff;
+  background: linear-gradient(135deg, #f02b3d, #c91227);
+  border: 1px solid rgba(255, 100, 110, 0.65);
+  border-radius: 11px;
+  box-shadow: 0 7px 24px rgba(230, 20, 45, 0.2);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 750;
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease,
+    filter 200ms ease;
+}
+
+.find-school-button:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.12);
+  box-shadow: 0 10px 30px rgba(230, 20, 45, 0.32);
+}
+
+.find-school-button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.find-school-button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+.school-section-footer {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 23px;
+  color: #777780;
+  font-size: 11px;
+}
+
+@media (max-width: 600px) {
+  .find-school-section {
+    margin: 35px 0;
+    padding: 35px 20px;
+    border-radius: 17px;
+  }
+
+  .find-school-section h2 {
+    letter-spacing: -0.8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .find-school-section,
+  .find-school-button {
+    transition: none;
+  }
+}
+```
